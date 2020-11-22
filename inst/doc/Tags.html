@@ -43,6 +43,54 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+<style type="text/css">
+a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
+a.anchor-section::before {content: '#';}
+.hasAnchor:hover a.anchor-section {visibility: visible;}
+</style>
+<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
+document.addEventListener('DOMContentLoaded', function() {
+  // Do nothing if AnchorJS is used
+  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
+    return;
+  }
+
+  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  // Do nothing if sections are already anchored
+  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
+    return null;
+  }
+
+  // Use section id when pandoc runs with --section-divs
+  const section_id = function(x) {
+    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
+            ? x.id : '');
+  };
+
+  // Add anchors
+  h.forEach(function(x) {
+    const id = x.id || section_id(x.parentElement);
+    if (id === '') {
+      return null;
+    }
+    let anchor = document.createElement('a');
+    anchor.href = '#' + id;
+    anchor.classList = ['anchor-section'];
+    x.classList.add('hasAnchor');
+    x.appendChild(anchor);
+  });
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -377,13 +425,17 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">#&gt; </span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="co">#&gt; Bayesian analysis: &#39;tidyposterior&#39;, &#39;tidybayes&#39;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a><span class="co">#&gt; deep learning: &#39;keras&#39;</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; feature engineering: &#39;keras&#39;, &#39;textrecipes&#39;</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt; parallel processing: &#39;furrr&#39;</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; resampling: &#39;infer&#39;, &#39;tidyposterior&#39;</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; text analysis: &#39;tidytext&#39;, &#39;keras&#39;, &#39;textrecipes&#39;</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; time series: &#39;timetk&#39;, &#39;tidyquant&#39;, &#39;sweep&#39;, &#39;modeltime&#39;, &#39;tsibble&#39;, &#39;fable&#39;</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt; extra recipes: &#39;embed&#39;, &#39;textrecipes&#39;, &#39;themis&#39;</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="co">#&gt; extra models: &#39;discrim&#39;, &#39;plsmod&#39;, &#39;rules&#39;, &#39;poissonreg&#39;, &#39;baguette&#39;</span></span></code></pre></div>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; ensembles: &#39;modeltime.ensemble&#39;, &#39;stacks&#39;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt; feature engineering: &#39;keras&#39;, &#39;textrecipes&#39;</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; parallel processing: &#39;furrr&#39;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; parameter tuning: &#39;finetune&#39;</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; resampling: &#39;infer&#39;, &#39;tidyposterior&#39;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt; text analysis: &#39;tidytext&#39;, &#39;keras&#39;, &#39;textrecipes&#39;</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co">#&gt; time series: &#39;timetk&#39;, &#39;tidyquant&#39;, &#39;sweep&#39;, &#39;modeltime&#39;, &#39;tsibble&#39;, &#39;fable&#39;</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co">#&gt; extra recipes: &#39;embed&#39;, &#39;textrecipes&#39;, &#39;themis&#39;</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="co">#&gt; extra models: &#39;discrim&#39;, &#39;plsmod&#39;, &#39;rules&#39;, &#39;poissonreg&#39;, &#39;baguette&#39;</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#&gt; visualization: &#39;dotwhisker&#39;, &#39;ggforce&#39;, &#39;patchwork&#39;, &#39;gganimate&#39;, &#39;ggrepel&#39;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; interpretation: &#39;vip&#39;, &#39;lime&#39;, &#39;DALEXtra&#39;</span></span></code></pre></div>
 
 <script type="text/javascript">
 window.onload = function() {
