@@ -1,3 +1,9 @@
+# tidymodels 0.2.0
+
+ * Updated versions
+ 
+ * Updated to testthat 3e
+
 # tidymodels 0.1.4
 
  * Updated versions
