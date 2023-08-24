@@ -1,3 +1,7 @@
+# tidymodels 1.1.1
+
+ * Updated versions
+
 # tidymodels 1.1.0
 
  * Updated `tidymodels_prefer()` for new conflicts. 
