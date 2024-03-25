@@ -1,3 +1,7 @@
+# tidymodels 1.2.0
+
+ * Updated versions
+
 # tidymodels 1.1.1
 
  * Updated versions

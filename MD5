@@ -1,7 +1,7 @@
-132f21ca0e0efd60d24f8a218ce2c7ab *DESCRIPTION
+94b3d415d493596e4d6acecf66198539 *DESCRIPTION
 8285db2805a49cc1b86768e9f0ab6988 *LICENSE
 cfa8c9115df0b851c01e2ba769510eb2 *NAMESPACE
-0fe9c07cb016549fd2536830db8cc34b *NEWS.md
+61b40881ea4cd1f33a8a63d7306a3716 *NEWS.md
 41cd98256e6a714cd37daaf002da1f52 *R/attach.R
 7a32b9f996acd1c44e13a5559b4131a9 *R/conflicts.R
 5413e336dfc0dec47b4c8f841f620234 *R/emails.R
@@ -11,12 +11,12 @@ cc0ebe2e345bc8907b67e06f18f51520 *R/tags.R
 81bc1567ea7eb79a7ce41b7d17d3babe *R/update.R
 5be555a23e3e879ccaba710752a2402e *R/utils.R
 74b5b1027ec5b5c6edbae92bb403f123 *R/zzz.R
-608d1bb71a1985625f021422386f6d9d *README.md
-d955d199c8dbbf1487bfa68d5a5c3f26 *build/vignette.rds
+89727fe2f8718d4d05122baba1007f96 *README.md
+825b7a5f202b61dcbe7112c6c1454d93 *build/vignette.rds
 5e0072c4a54c0832698c60ba54836711 *inst/CITATION
 7a804a36f889d54f7ac79e9a9386b62c *inst/doc/Tags.R
 c14d56db6fe7fb41e5f472f6609a6188 *inst/doc/Tags.Rmd
-22d164359028cf2df94711bf6823029a *inst/doc/Tags.html
+010f2b939b07bc45729084d3951e17dd *inst/doc/Tags.html
 3e30bebcfe691a3ce285a65e4b10807b *inst/rmarkdown/templates/model-analysis/skeleton/skeleton.Rmd
 8b74f2ea93f48ddbb668c9df4c5e8117 *inst/rmarkdown/templates/model-analysis/template.yaml
 d42e8bdf91875460cf78dc7d5216a65e *man/figures/logo.png
