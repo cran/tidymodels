@@ -19,6 +19,7 @@ tidymodels_prefer <- function(quiet = TRUE) {
   res <-
     utils::capture.output({
       conflicted::conflict_prefer("refit",           winner = "agua",      quiet = quiet)
+      conflicted::conflict_prefer("explain",         winner = "DALEX",     quiet = quiet)
       conflicted::conflict_prefer("Laplace",         winner = "dials",     quiet = quiet)
       conflicted::conflict_prefer("max_rules",       winner = "dials",     quiet = quiet)
       conflicted::conflict_prefer("neighbors",       winner = "dials",     quiet = quiet)
@@ -41,6 +42,7 @@ tidymodels_prefer <- function(quiet = TRUE) {
       conflicted::conflict_prefer("map",             winner = "purrr",     quiet = quiet)
       conflicted::conflict_prefer("discretize",      winner = "recipes",   quiet = quiet)
       conflicted::conflict_prefer("step",            winner = "recipes",   quiet = quiet)
+      conflicted::conflict_prefer("update",          winner = "recipes",   quiet = quiet)
       conflicted::conflict_prefer("populate",        winner = "rsample",   quiet = quiet)
       conflicted::conflict_prefer("rescale",         winner = "scales",    quiet = quiet)
       conflicted::conflict_prefer("step_downsample", winner = "themis",    quiet = quiet)

@@ -1,3 +1,11 @@
+# tidymodels 1.3.0
+
+ * Updated versions
+ 
+ * Prefer `DALEX::explains()` over `dplyr::explains()` when you use tidymodels_prefer() [#113](https://github.com/tidymodels/tidymodels/issues/113)
+
+ * Prefer `recipes::update()` over other `update()` functions.
+
 # tidymodels 1.2.0
 
  * Updated versions
