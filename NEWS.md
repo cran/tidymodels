@@ -1,3 +1,11 @@
+# tidymodels 1.4.0
+
+ * Updated versions
+ 
+* Transition from the magrittr pipe to the base R pipe.
+
+* Added the tailor package. 
+
 # tidymodels 1.3.0
 
  * Updated versions
