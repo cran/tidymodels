@@ -1,7 +1,9 @@
+# tidymodels 1.4.1
+
+* Bug fix for omitted attached packages. 
+
 # tidymodels 1.4.0
 
- * Updated versions
- 
 * Transition from the magrittr pipe to the base R pipe.
 
 * Added the tailor package. 
