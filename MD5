@@ -1,7 +1,7 @@
-c7c43f3303ef5d5c64789995cdc491d8 *DESCRIPTION
+d957391ccd3d8b53d1fc34183521adcd *DESCRIPTION
 8065ce3523bfb670139c1cf8ef52036e *LICENSE
 bbb5d178192002e440b1506abf516a08 *NAMESPACE
-9891bc89f50b6665e2ed6699bc90a211 *NEWS.md
+8de6e76d556e3d5273e8a104f4b5e65b *NEWS.md
 24f6e10786ef263b65eb8bf622ea0b02 *R/attach.R
 f46fb461976dc3edb2c66441e2b5c106 *R/conflicts.R
 f38e8b6553750f24937bfd87e736d2d9 *R/emails.R
@@ -11,8 +11,8 @@ e78ca734e13ba3d3a634319119dd3df7 *R/tidymodels_prefer.R
 0aa90c4bab0e9e3bac0c96ec0f4e53a4 *R/update.R
 5be555a23e3e879ccaba710752a2402e *R/utils.R
 74b5b1027ec5b5c6edbae92bb403f123 *R/zzz.R
-badcb3d6f6c6d5a59b2dd52fd5030db2 *README.md
-6a95fe37a14cf1f5e796eebf1fe0b9d7 *build/vignette.rds
+3dc884460818922442faa40a3404b349 *README.md
+9c6679bfedb316a4c2d8f1a221c1c704 *build/vignette.rds
 5e0072c4a54c0832698c60ba54836711 *inst/CITATION
 ad89bf58b34554b9fe791d0efe634b18 *inst/doc/Tags.R
 7c8ba67cf0bff424870574e098eeb2b4 *inst/doc/Tags.Rmd
